@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2f74c0;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 60px;
+  color: white;
+}
+
+
+.global-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+}
+
+.todolist-container {
+  width: 100%;
+}
+
+.inputField-container {
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-wrapper input {
+  width: 100%;
+  height: 70px;
+  border-radius: 1000px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 70px;
+  outline: none;
+  font-size: 16px;
+} 
+
+.input-wrapper .input-submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    right: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: #2f74c0;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+
+/* Icon styling */
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Single Todo Styling Object */
+
+.singleTod-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 29.5%;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #FF9900;
+  border-radius: 5px;
+}
+
+/* Style to show if an item is done or not */
+.isdone {
+  text-decoration: line-through;
+  color: red;
+}
+
+.text-todo {
+  color: white;
+}
