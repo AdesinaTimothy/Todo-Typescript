@@ -13,12 +13,9 @@ interface Props  {
 
 export default function SingleTodo({todo, todos, setTodos}: Props) {
     
-    
     const [isEdit, setIsEdit] = useState<boolean>(false);
     const [editTodo, setEditTodo] = useState<string>(todo.todo)
     
-   
-
     // Function to to delete a todoItem  
     const handelDelete = (id: number) => {
         setTodos(
@@ -34,8 +31,6 @@ export default function SingleTodo({todo, todos, setTodos}: Props) {
                 todo.id === id? {...todo, isDone: !todo.isDone} : todo
             ))
         )
-
-    
     }
 
     // Function to handle the edit funnction of the todoItem
